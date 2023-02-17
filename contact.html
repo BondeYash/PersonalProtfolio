@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            
+            <nav>
+                <ul>
+                    <li> <a href="/">Home </a></li>
+                    <li> <a href="/intro.html">My Intro </a></li>
+                    <li> <a href="/services.html">Services </a></li>
+                    <li> <a href="/blog.html">Blog </a></li>
+                    <li> <a href="/contact.html">Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+          <div class="hamburger">
+            <img class = "ham" src="hamburger.png" alt="" width="23">
+            <img class = "cross" src="close.png" alt="" width="23">
+        </div>
+            <div class="contactform">
+
+             <h1>Contact Me for Work/General Enquiries </h1>
+              <form onsubmit="sendEmail(); reset (); return false;">
+                <div class="mb-3">
+                  <label for="clientEmail" class="form-label">Name</label>
+                  <input type="name" class="form-control" id="clientname" aria-describedby="emailHelp" name = "name">
+                  <!-- <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div> -->
+                </div>
+                <div class="mb-3">
+                    <label for="clientEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp" name="email">
+                    <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+                  </div>
+                <div class="mb-3">
+                  <label for="clientphone" class="form-label">Phone</label>
+                  <input type="phone" class="form-control" id="clientphone" name="phone">
+                </div>
+                <div class="mb-3">
+                    <label for="clientEmail" class="form-label">Enquiry</label>
+                    <input type="name" class="form-control" id="clientEnquiry" aria-describedby="emailHelp" name="enquiry">
+                    <!-- <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div> -->
+                  </div>
+                <div class="mb-3 " id = "form-check">
+                  <input type="checkbox" class="form-check-input" id="isclient" name = "check">
+                  <label class="form-check-label" for="isclient">I want you to work on a project</label>
+                </div>
+                <button type="submit" class="btn btn-sm" name="submit">Submit</button>
+                
+              </form>
+            </div>
+    
+        </div>
+        <script src="script.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendEmail () {
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "yashbonde21@elastic.com",
+            Password : "EEDEDF1DAC18E74BE089093DBDBA8560B8F1",
+            To : 'yashjantya@gmail.com',
+            From : document.getElementById ('clientEmail').value,
+            Subject : "From the Personal Protfolio Website",
+            Body : "And this is the body"
+            }).then(
+             message => alert(message)
+            );
+          }
+
+        </script>
+    </div>
+</body>
+</html>

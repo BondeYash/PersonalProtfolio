@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Montserrat:wght@200&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+*{
+    margin: 0px;
+    padding : 0px;
+    /* color: #ccff00; */
+    /* background-color: #0ff0fc; */
+
+}
+
+
+.sidebar {
+   background-color: rgb(202, 186, 186);
+   width: 340px ;
+   height: 130vh;
+   font-family: 'Baloo Bhai 2', cursive;
+   transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 85px;
+
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 36px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.sidebarGo {
+    transform: translate(-433px , 0px);
+    position: absolute;
+}
+
+.main{
+   /* background-color: #fecd4f; */
+    width: 90vw;
+}
+.container {
+    display: flex;
+    /* background-color: #0ff0fc; */
+    /* background-color: black; */
+    
+   
+
+}
+
+.infocontainer {
+    /* background-color: rgb(217, 245, 57); */
+    width: 80vw;
+    height: 88vh;
+    margin: 50px ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devpic img {
+    height: 88vh;
+
+    /* margin: 0 200px; */
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 60px;
+    margin-right: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+.hello {
+    font-size: 3em;
+    color: #350b99;
+    /* color: white; */
+    font-weight: 1000 ; 
+}
+.name{
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+    /* color: white; */
+    color: #350b99;
+}
+.about{
+    font-size: 2.5em;
+    /* color: white; */
+    /* color: #ccff00; */
+}
+.moreabout {
+    /* font-size: 2em; */
+    /* margin-top: 23px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* color: white; */
+    /* color: #ccff00; */
+}
+.buttons {
+    margin-top: 37px ;
+    font-size: 1.6em;
+    color: white;
+    /* color: #ccff00; */
+    padding: 4px;
+    /* background-color: dodgerblue; */
+}
+
+.btn {
+   padding: 9px , 14px ;
+   border-radius: 4px;
+   color: white;
+   /* color: #ccff00; */
+   background-color: dodgerblue;
+   font-weight: bold;
+   font-size: 1.0em;
+   margin: 0 3px;
+   cursor: pointer;
+
+}
+
+.btn-sm {
+    font-size: 17px;
+    padding: 10px 13px;
+    margin: 23px 0 0 ;
+    
+}
+
+.btn:hover {
+    background-color: white;
+    color: dodgerblue;
+
+}
+
+/* This is the css for Contact Form  */
+
+.contactform{
+    padding: 0 34px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 144pxpx;
+    margin:  88px;
+    margin-top: 40px;
+}
+
+.contactform h1{
+    font-family: 'Baloo Bhai 2', cursive;
+    /* color: white; */
+    /* color: #ccff00;  */
+    /* text-align: center; */
+    /* padding: 12px 0; */
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px; */
+    
+   
+}
+.contactform form {
+    margin: 0 40px;
+
+    
+   
+}
+
+
+
+#emailHelp {
+    font-size: 8px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 2px 0 0 0 ;
+}
+
+input {
+    width: 26vw;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin: 6px 0 0 0 ;
+    padding: 3px;
+    
+}
+
+#form-check {
+   flex-direction: row;
+}
+
+#form-check input {
+   width:29px;
+   margin: 2px 2px 0;
+}
+
+/* This is the css for Blog Page  */
+
+.blogItem  {
+  margin: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.blogContainer {
+    margin: 0  88px;
+}
+
+.blogContainer  h1 {
+    color: #2568fb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 23px;
+}
+
+
+.blogItem p {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Css for Intro page  */
+
+.intro {
+    margin:  10px 88px;
+}
+.intro h2 {
+    color: #2568fb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 12px;
+}
+
+.intro p {
+
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 12px;
+}    
+
+.skill {
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.skillcontainer {
+    padding: 12px;
+}
+
+.skillItem  {
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: 900;
+    align-items: center;
+}
+
+.hundred {
+    width: 265px;
+    background-color: blue;
+}
+
+.fifty {
+    width: 125px;
+    background-color: red;
+}
+
+.t5 {
+    width: 75px;
+    background-color: yellow;
+}
+
+/* Inserting the Hamburger and cross icon  */
+
+.hamburger {
+    position: absolute ;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham {
+    margin-top: 10px;
+}
+
+.cross {
+    margin-left: 195px;
+    margin-top: 10px ;
+}
+
+
+/* Services Coding */
+
+.wrapper {
+    padding: 140px  140px 100px;
+    margin: 100px 100px;
+    /* background-color: #7da2a9; */
+    /* background-color: #0ff0fc; */
+    background-color: black;
+}
+
+
+
+
+.wrapper .hover-fx{
+    color: #fff;
+}
+
+.wrapper .hover-fx{
+    font-size: 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    line-height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+ 
+    background-color: rgb(255, 255, 255,0.1);
+    transition: 300ms;
+
+}
+
+.hover-fx:after{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: border-box;
+    box-shadow: 0 0 0 0 6px #fff;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: 300ms;
+}
+
+.hover-fx:hover{
+    background-color: #fff;
+    color: #151515;
+}
+
+.hover-fx:hover::after{
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+
+
+@media (max-width: 1115px) {
+
+    .devinfo {
+        font-size: 10px;
+    }
+    .devpic {
+        display: none;
+    }
+    .intro, .blogContainer , .contactform {
+        margin: 50px 8px;
+    }
+    .buttons {
+        font-size: 10px;
+    }
+}
